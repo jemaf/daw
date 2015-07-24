@@ -8,4 +8,8 @@
     * [Comandos DDL](database/sql-ddl.md)
     * [Comandos DML](database/sql-dml.md)
     * [Fazendo Consultas no SQL](database/sql-select.md)
+    * [Ordenação de Consultas](database/sql-order-by.md)
+    * [Consultas em várias Tabelas](database/sql-join.md)
+    * [Funções SQL](database/sql-funcoes.md)
+    * [Agrupamentos em SQL](database/sql-agrupamento.md)
   * [Normalização](database/normalizacao.md)
