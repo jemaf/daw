@@ -1,0 +1,6 @@
+{
+  "gitbook": "2.1.0",
+  "title": "Desenvolvimento de Aplicações para Web",
+  "language": "pt",
+  "plugins": ["code_tomorrow_scheme", "scrollablecode"]
+}
