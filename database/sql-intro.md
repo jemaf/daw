@@ -35,14 +35,55 @@ Os comandos SQL são divididos em três categorias principais:
 
  A Tabela abaixo mostra os principais comandos existentes no SQL, junto de suas respectivas categorias:
 
- | Comando | Descrição                                          | Categoria |
- |---------|----------------------------------------------------|-----------|
- | SELECT  | Consulta de dados existetnes                       | DML       |
- | INSERT  | Insere novos dados ao Banco de Dados               | DML       |
- | UPDATE  | Altera os dados existentes do Banco de Dados       | DML       |
- | DELETE  | Apaga dados existentes no Banco de Dados           | DML       |
- | CREATE  | Criação de novos objetos no Banco de Dados         | DDL       |
- | ALTER   | Alteração dos objetos existentes no Banco de Dados | DDL       |
- | DROP    | Exclusão de objetos existentes no Banco de Dados   | DDL       |
- | GRANT   | Conceder acesso a objetos no Banco de Dados        | DCL       |
- | REVOKE  | Retirar acesso a objetos no Banco de Dados         | DCL       |
+ <table>
+  <tr>
+    <th>Comando</th>
+    <th>Descrição</th>
+    <th>Categoria</th>
+  </tr>
+  <tr>
+    <td>SELECT</td>
+    <td>Consulta de dados existetnes</td>
+    <td>DML</td>
+  </tr>
+  <tr>
+    <td>INSERT</td>
+    <td>Insere novos dados ao Banco de Dados</td>
+    <td>DML</td>
+  </tr>
+  <tr>
+    <td>UPDATE</td>
+    <td>Altera os dados existentes do Banco de Dados</td>
+    <td>DML</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>Apaga dados existentes no Banco de Dados</td>
+    <td>DML</td>
+  </tr>
+  <tr>
+    <td>CREATE</td>
+    <td>Criação de novos objetos no Banco de Dados</td>
+    <td>DDL</td>
+  </tr>
+  <tr>
+    <td>ALTER</td>
+    <td>Alteração dos objetos existentes no Banco de Dados</td>
+    <td>DDL</td>
+  </tr>
+  <tr>
+    <td>DROP</td>
+    <td>Exclusão de objetos existentes no Banco de Dados</td>
+    <td>DDL</td>
+  </tr>
+  <tr>
+    <td>GRANT</td>
+    <td>Conceder acesso a objetos no Banco de Dados</td>
+    <td>DCL</td>
+  </tr>
+  <tr>
+    <td>REVOKE</td>
+    <td>Retirar acesso a objetos no Banco de Dados</td>
+    <td>DCL</td>
+  </tr>
+</table>
