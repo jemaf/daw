@@ -24,7 +24,7 @@ INSERT INTO categorias (nome) VALUES ("Trabalho");
 INSERT INTO usuarios (nome, endereco, idade) VALUES ("João", "Rua do João, 1222", 27);
 
 /* insere uma nova tarefa */
-INSERT INTO tarefas (descricao, usuario_id, categoria_id) VALUES ("Corrigir trabalhos práticos", 1, 3);
+INSERT INTO tarefas (descricao, usuario_id, categoria_id) VALUES ("Corrigir trabalhos práticos", 0, 2);
 ```
 
 ###O Comando UPDATE
@@ -49,7 +49,7 @@ O trecho de código abaixo mostra um exemplo de utilização do comando `UPDATE`
 /* atualiza tarefas que já "venceram" */
 UPDATE tarefas
 SET descricao = 'DONE: ' + descricao
-WHERE data_limita < NOW()
+WHERE data_limite < NOW();
 ```
 
 ###O Comando DELETE
@@ -99,6 +99,6 @@ SELECT * FROM categorias;
 	seleciona a descrição e a data limite das
 	tarefas que ainda não foram concluídas
 */
-SELECT descricao, data_limite FROM tarefas
-WHERE data_limite > NOW();
+ SELECT descricao, data_limite FROM tarefas
+ WHERE data_limite > NOW() OR data_limite IS NULL;
 ```
