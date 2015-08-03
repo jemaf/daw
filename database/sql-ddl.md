@@ -64,7 +64,7 @@ Outros tipos de dados podem ser armazenados, tais como matrizes e arquivos bina�
 
 Ainda, é possível definir valores padrão para as colunas de uma Tabela no momento de sua criação. Para isso, basta utilizar a palavra `DEFAULT` no final da declaração da coluna, junto com o valor *default* propriamente dito.
 
-O trecho de código abaixo contém um exemplo completo do comando para a criação da tabela *tasks* no banco de dados *TodoList*. É importante observar os demais comandos do trecho. Para criar uma tabela, antes de tudo é preciso selecionar em qual banco de dados essa tabela será criada. Essa informação pode ser dada por meio do comando `USE`. O comando `SHOW TABLE` mostra todas as tabelas existentes no banco de dados. Por fim, o comando `DESC` descreve as características de uma determinada tabela.
+O trecho de código abaixo contém um exemplo completo do comando para a criação da tabela *tasks* no banco de dados *TodoList*. É importante observar os demais comandos do trecho. Para criar uma tabela, antes de tudo é preciso selecionar em qual banco de dados essa tabela será criada. Essa informação pode ser dada por meio do comando `USE`. O comando `SHOW TABLES` mostra todas as tabelas existentes no banco de dados. Por fim, o comando `DESC` descreve as características de uma determinada tabela.
 
 ```
 /* Selecionando o banco de dados... */
@@ -100,22 +100,22 @@ O parâmetro `nome_tabela` representa o nome da tabela que sofrerá as alteraç�
 * Renomear nome da tabela
 ```
 ALTER TABLE nome_tabela
-CHANGE coluna_antiga coluna_nova tipo
+CHANGE coluna_antiga coluna_nova tipo;
 ```
 * Adicionar uma nova coluna
 ```
 ALTER TABLE nome_tabela
-ADD nome_coluna tipo_coluna
+ADD nome_coluna tipo_coluna;
 ```
 * Remover uma coluna existente
 ```
 ALTER TABLE nome_tabela
-DROP nome_coluna
+DROP nome_coluna;
 ```
 * Alterar o tipo de uma coluna
 ```
 ALTER TABLE nome_tabela
-MODIFY COLUMN coluna novo_tipo
+MODIFY COLUMN coluna novo_tipo;
 ```
 
 O trecho de código abaixo exemplifica a utilização de cada uma das ações possíveis para o comando `ALTER TABLE`:
@@ -123,19 +123,19 @@ O trecho de código abaixo exemplifica a utilização de cada uma das ações po
 ```
 /* altera o nome de uma coluna */
 ALTER TABLE usuarios
-CHANGE codigo id INT
+CHANGE codigo id INT;
 
 /* adiciona uma nova coluna */
 ALTER TABLE usuarios
-ADD sexo VARCHAR(1)
+ADD sexo VARCHAR(1);
 
 /* remove uma determinada coluna */
 ALTER TABLE usuarios
-DROP saldo
+DROP saldo;
 
 /* muda o tipo de uma determinada coluna */
 ALTER TABLE usuarios
-MODIFY COLUMN sexo BIT
+MODIFY COLUMN sexo BIT;
 ```
 
 É preciso tomar um cuidado especial ao alterar as colunas quando a tabela já possui dados armazenados, uma vez que - ao alterar uma determinada coluna - seus dados poderão ser perdidos. Neste caso, recomenda-se a execução dos seguintes passos:
@@ -204,7 +204,7 @@ ADD CONSTRAINT pk_usuarios PRIMARY KEY (id);
 
 /* cria tabela categoria */
 CREATE TABLE categorias(
-id INT AUTO_INCREMENT NOT_NULL,
+id INT AUTO_INCREMENT NOT NULL,
 nome VARCHAR(50),
 
 CONSTRAINT pk_categoria PRIMARY KEY (id),
@@ -218,7 +218,7 @@ MODIFY nome VARCHAR(50) NOT NULL;
 
 /* cria tabela tarefas */
 CREATE TABLE tarefas (
-id INT AUTO_INCREMENT NOT_NULL,
+id INT AUTO_INCREMENT NOT NULL,
 descricao VARCHAR(200),
 data_limite DATE,
 usuario_id INT,
