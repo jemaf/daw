@@ -3,6 +3,8 @@
 
 ## Módulo Back-End
 
+* PHP
+  * [PHP & Banco de Dados](php/mysql.md)
 * [Banco de dados](database/README.md)
   * [A Linguagem SQL](database/sql-intro.md)
     * [Comandos DDL](database/sql-ddl.md)
